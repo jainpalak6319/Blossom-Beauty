@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header>
+<div class="header">
+<nav class="navbar">
+  <div class="logo">Blossom Beauty</div>
+  <div class="menu-icon" id="menu-icon">&#9776;</div> <!-- Hamburger icon -->
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Products</a></li>
+    <li><button class="helpdesk">Help Desk</button></li>
+  </ul>
+</nav>
+<div class="head-title">About us</div>
+<div class="head-sub">"Focuses on the creation, production, and sale of products used for personal care and beauty enhancement"</div>
+</div>
+    </header>
+    <section>
+        <div class="section">
+            <div class="section-card">
+                <div class="section-img"><img src="images/mission.avif" alt="Mission"></div>
+                <div class="section-text"><h3>Our Mission</h3>
+                <p>Broadly aiming to enhance personal appearance and well-being through the development, production, and marketing of beauty and personal care products. This includes a focus on quality, innovation, and increasingly, sustainability and inclusivity. Ultimately, the industry strives to meet diverse consumer needs and desires while upholding ethical and responsible practices. </p></div>
+            </div>
+             <div class="section-card">
+                <div class="section-img"><img src="images/vision.webp" alt="Vision"></div>
+                <div class="section-text"><h3>Our Vision</h3><p>
+                    Focused on ethical, sustainable, and inclusive practices, alongside innovation and customer-centricity. This includes prioritizing safety, quality, and transparency in products and operations, while also promoting responsible sourcing and minimizing environmental impact. Furthermore, there's a growing emphasis on diversity and representation, aiming to cater to all skin tones, genders, and age groups. 
+
+                </p></div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+  const menuIcon = document.getElementById("menu-icon");
+  const navLinks = document.getElementById("nav-links");
+
+  menuIcon.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+</script>
+</html>

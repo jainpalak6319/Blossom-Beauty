@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossom Beauty</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav class="navbar">
+  <div class="logo">Blossom Beauty</div>
+  <div class="menu-icon" id="menu-icon">&#9776;</div> <!-- Hamburger icon -->
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><button class="cta">Login</button></li>
+  </ul>
+</nav>
+<section>
+  <div class="hero-section hero-img">
+    <!-- <div class="hero-img"></div> -->
+    <div class="overlay-text"> "Where beauty is more than skin deep" or "Unleash your inner glow."</div>
+    <button class="hero-btn">View Our Page</button>
+  </div>
+</section>
+<main>
+  <div class="container">
+    <div class="card"><div class="card-img"><img src="images/product1.webp" alt="foundation"></div>
+    <ul class="card-detail"><li>All-In-One Tinted Moisturizer</li><li>₹649</li></ul>
+  <button class="card-btn">View</button></div>
+    <div class="card"><div class="card-img"><img src="images/product2.webp" alt="foundation"></div>
+    <ul class="card-detail"><li>Lakme Mousse</li><li>₹349</li></ul>
+  <button class="card-btn">View</button></div>
+    <div class="card"><div class="card-img"><img src="images/product3.webp" alt="foundation"></div>
+    <ul class="card-detail"><li>L.A Girl HD Pro Conceal</li><li>₹500</li></ul>
+  <button class="card-btn">View</button></div>
+  </div>
+</main>
+<footer>
+<div class="foot-panels">
+  <div class="ftp">
+     <div class="head">Website Links</div>
+    <ul>
+    <li>Cookie Settings</li>
+    <li>Sitemap</li>
+    <li>Terms and Conditions</li>
+    <li>Privacy Policy</li>
+    <li>Posting Guidelines</li>
+    <li>©2025 Blossom Beauty</li>
+  </ul></div>
+  <hr>
+  <div class="ftp">
+    <div class="head">Customer Service</div>
+    <ul>
+      <li>Contact us</li>
+    </ul>
+  </div>
+  <hr>
+  <div class="ftp">
+    <div class="head">Follow Us On</div>
+    <ul class="icons">
+      <li><i class="fa-brands fa-square-facebook"></i></li>
+      <li><i class="fa-brands fa-square-instagram"></i></li>
+      <li><i class="fa-brands fa-square-twitter"></i></li>
+    </ul>
+  </div>
+</div>
+</footer>
+</body>
+<script>
+  const menuIcon = document.getElementById("menu-icon");
+  const navLinks = document.getElementById("nav-links");
+
+  menuIcon.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+</script>
+</html>
