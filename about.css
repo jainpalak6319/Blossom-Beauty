@@ -30,7 +30,7 @@ font-family: serif;
 font-weight: 700;
 }
 .nav-links a{
-  color: #3b1505da;
+  color: #f39e7ada;
   text-decoration: none;
   font-size: large;
   font-weight: 500;
@@ -185,6 +185,7 @@ button.helpdesk{
   }
   button.helpdesk{
     padding: 5px 10px;
+    font-size: 14px;
   }
 }
 @media (max-width: 480px) {

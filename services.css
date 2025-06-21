@@ -1,0 +1,325 @@
+body{
+    background-color:#f5f5dc ;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Hide hamburger icon by default */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.logo{
+color: #5f3138;
+font-size: x-large;
+font-family: serif;
+font-weight: 700;
+}
+.nav-links a{
+  color: #912e04da;
+  text-decoration: none;
+  font-size: large;
+  font-weight: 500;
+ 
+}
+button.Contact{
+  color:rgb(238, 232, 232);
+  background-color: #532020;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+.Contact:hover {
+  background-color:#faf3a6;
+  color:#2c1919;
+}
+.service-head{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  z-index: 1;
+  height: 500px;
+}
+
+.service-head::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('images/service3.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7; /* adjust transparency here */
+  z-index: -1;
+}
+.service-detail{
+    display: flex;
+    padding: 30px;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.detail{
+    padding: 30px;
+}
+.sub{
+font-size: 40px;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(39, 1, 1);
+}
+.detail p{
+    font-size: 15px;
+    line-height: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(61, 3, 3);
+}
+.detail h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: rgb(24, 1, 1);
+}
+.join-btn{
+  color:white;
+  background-color: #a31818;
+  padding: 5px 28px;
+  font-size: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+.join-btn:hover {
+  background-color:#d89c68;
+  color:#fcfbfb;
+}
+.heading{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4b2c12;
+    font-weight:600;
+}
+.container{
+    display: flex;
+    padding: 30px;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    box-shadow: 5px 5px 5px 5px #ac8660;
+    height: 500px;
+    width: 500px;
+    
+}
+.card-img img{
+    width:250px;
+    height: 200px;
+    object-fit: fill;
+    border-radius: 30px;
+    padding: 10px;
+}
+.card-head{
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card-description{
+    font-size: 1.1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.1rem;
+    line-height: 25px;
+}
+.view-service{
+ color:rgb(15, 2, 2);
+  background-color: #e06f12;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+.view-service:hover {
+  background-color:#817d4e;
+  color:#0a0101;
+}
+
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* adjust based on navbar height */
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+.service-detail{
+    flex-direction: column;
+    padding: 5px;
+    gap: 2px;
+}
+.detail{
+    padding: 5px;
+    margin-left: 15px;
+    width: 100%;
+    text-align: left;
+}
+.sub{
+font-size: 15px;
+}
+.detail p{
+    font-size: 10px;
+    line-height: 12px;
+}
+.detail h1{
+    font-size: 1rem;
+    margin-top:-15px;
+
+}
+.join-btn{
+  padding: 5px 10px;
+  font-size: 10px;
+  
+}
+.heading{
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+.container{
+    flex-direction: column;
+    padding: 20px;
+    gap: 25px;
+}
+.card{
+    height: 300px;
+    width: 250px;
+    gap: 20px;
+}
+.card-img img{
+    width:150px;
+    height: 100px;
+    object-fit: fill;
+    padding: 5px;
+}
+.card-head{
+    font-size: 1rem;
+}
+.card-description{
+    font-size: 0.95rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 15px;
+}
+.view-service{
+  padding: 5px 10px;
+  font-size: 13px;
+}
+button.Contact{
+  padding: 10px 20px;
+  font-size: 14px;
+}
+}
+@media (max-width: 480px) {
+  .service-head{
+    height: 180px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .service-head{
+    height: 400px;
+  }
+  .section-detail{
+    padding: 20px;
+    gap: 50px;
+  }
+ .detail{
+    padding: 25px;
+}
+.sub{
+font-size: 30px;
+}
+.detail p{
+    font-size: 14px;
+    line-height: 25px;
+}
+.detail h1{
+    font-size: 2.4rem;
+}
+.join-btn{
+  padding: 5px 25px;
+  font-size: 18px;
+}
+.heading{
+    font-size: 2.5rem;
+}
+.container{
+    padding: 25px;
+    margin-top: 10px;
+    gap: 30px;
+    flex-direction: column;
+}
+.card{
+gap: 30px;
+}
+.card-img img{
+    width:300px;
+    height: 200px;
+    object-fit: fill;
+}
+.card-head{
+    font-size: 1.7rem;
+}
+.card-description{
+    font-size: 1.4rem;
+    line-height: 25px;
+}
+.view-service{
+  font-size: 18px;
+  
+}
+
+}
