@@ -1,0 +1,281 @@
+body{
+    background-color:#c89daa;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Hide hamburger icon by default */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.logo{
+color: #5f3138;
+font-size: x-large;
+font-family: serif;
+font-weight: 700;
+}
+.nav-links a{
+  color: #2c0323da;
+  text-decoration: none;
+  font-size: large;
+  font-weight: 500;
+ 
+}
+button.help{
+  color:rgb(238, 232, 232);
+  background-color: #3d0739;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+.help:hover {
+  background-color:#d9d9df;
+  color:#301b2b;
+}
+.out-box{
+    background-color:#e1c9d0;
+    height: 500px;
+    width:auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.in-box{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 30px;
+}
+.getintouch{
+    font-size: 3rem;
+    color: #240922;
+}
+.liketohear{
+    font-size: 1.1rem;
+     color: #42103f;
+}
+p{
+width: 60%;
+line-height: 1.5rem;
+color: #473e47;
+font-size: 0.9rem;
+}
+.mail{
+    display: flex;
+    gap: 30px;
+}
+.mail i{
+    color: #252425;
+    font-size: 18px;
+}
+.mail a{
+    text-decoration: none;
+    color: #661a61;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+.others{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 18px;
+    color: #252425;
+}
+.fa-thumbs-up{
+width: 40px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+}
+.name-head{
+    display: flex;
+    gap: 140px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(288, 75%, 14%);
+    
+}
+.name-input{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.name-input input{
+    height: 25px;
+    width: 170px;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.email input{
+    height: 25px;
+    margin-bottom: 20px;
+}
+.email-head{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(288, 75%, 14%);
+}
+.msg{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.msg textarea{
+    height: 75px;
+    margin-bottom: 20px;
+}
+.msg-head{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(288, 75%, 14%);
+}
+button.send{
+margin-left: 300px;
+background-color: #70426e;
+padding: 5px 28px;
+font-size: 14px;
+color: #d9d9df;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* adjust based on navbar height */
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+  .out-box{
+    margin-top: 10px;
+    height: 100%;
+    width:auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+.in-box{
+    padding: 10px;
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+}
+.getintouch{
+    font-size: 1.4rem;
+}
+.liketohear{
+    font-size: 0.8rem;
+}
+p{
+width: 85%;
+line-height: 1.1rem;
+color: #473e47;
+font-size: 0.7rem;
+}
+.mail{
+    gap: 30px;
+}
+.mail i{
+    font-size: 13px;
+}
+.mail a{
+    font-size: 10px;
+}
+.others{
+    gap: 10px;
+    font-size: 13px;
+}
+.name{
+    margin-left: 20px;
+}
+.name-head{
+    gap: 130px;
+    padding-bottom: 5px;
+    font-size: 10px;
+    
+}
+.name-input{
+    gap: 20px;
+    padding-bottom: 10px;
+}
+.name-input input{
+    height: 20px;
+    width: 145px;
+}
+.email{
+    gap: 5px;
+    margin-left: 20px;
+}
+.email input{
+    height: 20px;
+    width: 320px;
+    margin-bottom: 10px;
+}
+.email-head{
+    font-size: 10px;
+}
+.msg{
+    gap: 5px;
+    margin-left: 20px;
+}
+.msg textarea{
+    height: 55px;
+    width: 320px;
+    margin-bottom: 10px;
+}
+.msg-head{
+    font-size: 10px;
+}
+button.send{
+margin-left: 250px;
+padding: 5px 20px;
+font-size: 14px;
+
+}
+button.help{
+ padding: 5px 10px;
+ font-size: 14px;
+}
+}

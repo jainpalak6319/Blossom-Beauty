@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+  <div class="logo">Blossom Beauty</div>
+  <div class="menu-icon" id="menu-icon">&#9776;</div> <!-- Hamburger icon -->
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#">Products</a></li>
+    <li><button class="help">Help Desk</button></li>
+  </ul>
+</nav>
+<div class="out-box">
+    <div class="in-box">
+        <div class="getintouch">Get in Touch</div>
+        <div class="liketohear">I'd like to hear from you!</div>
+        <p>If you have any query or want to know more about us just fill out the contact form!</p>
+        <div class="mail"><i class="fa-solid fa-envelope"></i>
+        <a href="#">blossombeauty@gmail.com</a>
+        </div>
+        <div class="others">
+            <i class="fa-solid fa-thumbs-up"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </div>
+    <div class="in-box">
+        <form>
+         <div class="name">
+        <div class="name-head"><span>First Name</span> <span>Last Name</span>
+        </div>
+        <div class="name-input">
+        <input type="text">
+        <input type="text">
+         </div>
+         </div>
+        <div class="email"> <div class="email-head">Email</div>
+         <input type="email"></div>
+        <div class="msg"><div class="msg-head">Message</div>
+         <textarea name="msg" id="msg"></textarea></div>
+         <button class="send">Send</button>
+        </form>
+    </div>
+</div>
+</body>
+<script>
+  const menuIcon = document.getElementById("menu-icon");
+  const navLinks = document.getElementById("nav-links");
+
+  menuIcon.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+</script>
+</html>
