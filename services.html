@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="service-bg">
     <header>
-     <div class="service-head">
-     <nav class="navbar">
-     <div class="logo">Blossom Beauty</div>
-     <div class="menu-icon" id="menu-icon">&#9776;</div> <!-- Hamburger icon -->
-     <ul class="nav-links" id="nav-links">
+    <nav class="navbar">
+    <div class="logo">Blossom Beauty</div>
+    <div class="menu-icon" id="menu-icon">&#9776;</div> <!-- Hamburger icon -->
+    <ul class="nav-links" id="nav-links">
     <li><a href="index.html">Home</a></li>
-    <li><a href="#">Team</a></li>
-    <li><button class="Contact">Contact <i class="fa-solid fa-phone"></i></button></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><button class="cta" onclick='location.href="contact.html"'>Contact <i class="fa-solid fa-phone"></i></button></li>
     </ul>
     </nav>
+        <div class="service-head">
         <div class="service-detail">
          <div class="detail"><div class="sub">Blossom Beauty Services.</div>
         <p>Prioritizes authenticity, sustainability, and innovation, while also offering customization and luxury options.</p></div>
@@ -29,27 +30,53 @@
     </header>
     <main>
         <div class="heading">Welcome to Our Service Section</div>
-        <div class="container">
-            <div class="card">
-                <div class="card-img"><img src="images/Order-tracking-.png" alt="Order Tracking"></div>
-                <div class="card-head">Order Tracking</div>
-                <div class="card-description">Providing customers with the ability to track their orders from purchase to delivery builds trust and transparency.</div>
+        <div class="service-container">
+            <div class="s-card">
+                <div class="s-card-img"><img src="images/Order-tracking-.png" alt="Order Tracking"></div>
+                <div class="s-card-head">Order Tracking</div>
+                <div class="s-card-description">Providing customers with the ability to track their orders from purchase to delivery builds trust and transparency.</div>
                 <button class="view-service">View-Service</button>
             </div>
-             <div class="card">
-                <div class="card-img"><img src="images/images.png" alt="Payment"></div>
-                <div class="card-head">Secure Payment Gateways</div>
-                <div class="card-description">Offering a variety of trusted payment methods (credit cards, debit cards, digital wallets) ensures a smooth and secure checkout process. </div>
+             <div class="s-card">
+                <div class="s-card-img"><img src="images/images.png" alt="Payment"></div>
+                <div class="s-card-head">Secure Payment Gateways</div>
+                <div class="s-card-description">Offering a variety of trusted payment methods (credit cards, debit cards, digital wallets) ensures a smooth and secure checkout process. </div>
                 <button class="view-service">View-Service</button>
             </div>
-             <div class="card">
-                <div class="card-img"><img src="images/shop-cart.avif" alt="cart"></div>
-                <div class="card-head">Shopping Cart and Checkout</div>
-                <div class="card-description">An intuitive shopping cart and checkout process, including options for shipping and billing addresses, is essential for completing purchases.</div>
+             <div class="s-card">
+                <div class="s-card-img"><img src="images/shop-cart.avif" alt="cart"></div>
+                <div class="s-card-head">Shopping Cart and Checkout</div>
+                <div class="s-card-description">An intuitive shopping cart and checkout process, including options for shipping and billing addresses, is essential for completing purchases.</div>
                 <button class="view-service">View-Service</button>
             </div>
         </div>
     </main>
+     </footer>
+      <div class="footer-section">
+        <div class="footer-panel">
+          <h4>About Us</h4>
+          <p>Broadly aiming to enhance personal appearance and well-being through the development, production, and marketing of beauty and personal care products.  </p>
+        </div>
+        <div class="footer-panel quick-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-panel">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i> blossombeauty@gmail.com</li>
+            <li><i class="fa-solid fa-location-dot"></i> Sector-13,MLN Building</li>
+          </ul>
+          
+        </div>
+      </div>
+      <div class="copyright">@2025 Blossom Beauty.All copyright reserved</div>
+      <footer>
 </body>
 <script>
   const menuIcon = document.getElementById("menu-icon");

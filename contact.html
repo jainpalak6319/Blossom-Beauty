@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="contact-bg">
     <nav class="navbar">
-  <div class="logo">Blossom Beauty</div>
-  <div class="menu-icon" id="menu-icon">&#9776;</div> <!-- Hamburger icon -->
-  <ul class="nav-links" id="nav-links">
+    <div class="logo">Blossom Beauty</div>
+    <div class="menu-icon" id="menu-icon">&#9776;</div> <!-- Hamburger icon -->
+    <ul class="nav-links" id="nav-links">
     <li><a href="index.html">Home</a></li>
-    <li><a href="#">Products</a></li>
-    <li><button class="help">Help Desk</button></li>
-  </ul>
-</nav>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><button class="cta" onclick='location.href="contact.html"'>Contact <i class="fa-solid fa-phone"></i></button></li>
+    </ul>
+    </nav>
 <div class="out-box">
     <div class="in-box">
         <div class="getintouch">Get in Touch</div>
@@ -51,6 +52,32 @@
         </form>
     </div>
 </div>
+ </footer>
+      <div class="footer-section">
+        <div class="footer-panel">
+          <h4>About Us</h4>
+          <p>Broadly aiming to enhance personal appearance and well-being through the development, production, and marketing of beauty and personal care products.  </p>
+        </div>
+        <div class="footer-panel quick-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-panel">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i> blossombeauty@gmail.com</li>
+            <li><i class="fa-solid fa-location-dot"></i> Sector-13,MLN Building</li>
+          </ul>
+          
+        </div>
+      </div>
+      <div class="copyright">@2025 Blossom Beauty.All copyright reserved</div>
+      <footer>
 </body>
 <script>
   const menuIcon = document.getElementById("menu-icon");
