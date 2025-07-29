@@ -49,7 +49,7 @@
             <li>All-In-One Tinted Moisturizer</li>
             <li>₹649</li>
           </ul>
-          <button class="card-btn">View</button>
+          <button class="card-btn" onclick="showMessage()">View</button>
         </div>
         <div class="card">
           <div class="card-img">
@@ -107,5 +107,9 @@
     menuIcon.addEventListener("click", () => {
       navLinks.classList.toggle("active");
     });
+     function showMessage() {
+      alert("Hello JavaScript!");
+    }
   </script>
+
 </html>
